@@ -13,8 +13,6 @@ body {
     font-style: normal;
 	font-weight: 300;
     overflow-x: hidden;
-    padding: 10;
-    margin-top: 60px;
     background-color: black;
     animation: fadein 2s;
     animation-fill-mode: forwards;
@@ -38,10 +36,14 @@ p {
     margin: 0;
 }
 
-.image_spread{
-    height: 100%;
-    background-image:url("//Images/Forest.jpg");
+.image_spread {
+    height: 100vh;
+    background-image:url("../Images/Forest.jpg");
+    background-color: chocolate;
     background-position: center;
+    background-size: cover;
+    display: block;
+    background-repeat: no-repeat;
 }
 
 .center {
@@ -54,7 +56,8 @@ p {
 .headshot {
     border-radius: 60%;
     overflow: hidden;
-    border-style: solid;
+    border-style:solid;
+    border-color: white;
     border-width: 4px;
 }
 
