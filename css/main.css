@@ -6,6 +6,7 @@ Jelmer Laks 2021
 html,body {
     width: 100%;
     height: 100%;
+    margin:0;
   }
 
 body {
@@ -13,7 +14,7 @@ body {
     font-style: normal;
 	font-weight: 300;
     overflow-x: hidden;
-    background-color: black;
+    background-color: #262523;
     animation: fadein 2s;
     animation-fill-mode: forwards;
 }
@@ -36,64 +37,96 @@ p {
     margin: 0;
 }
 
+.navbar {
+    height: auto;
+    width: 100%;
+    display: flex;
+    position:fixed;
+    overflow: hidden;
+}
+
+.center_line {
+    width: 4px;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    margin-left: 50%;
+    z-index: -1;
+}
+
+.menu_entry {
+    font: 100 25px Google Sans,Helvetica Neue,sans-serif;
+    color: white;
+    padding: 20px;
+}
+
 .image_spread {
-    height: 100vh;
-    background-image:url("../Images/Forest.jpg");
-    background-color: chocolate;
+    height: auto;
     background-position: center;
     background-size: cover;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
     background-repeat: no-repeat;
 }
 
 .center {
-    display: flex;
-    align-content: center;
-    justify-content: center;
+    margin: 0 auto;
     flex-wrap: wrap;
 }
 
 .headshot {
-    border-radius: 60%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    margin: 0 auto;
     overflow: hidden;
-    border-style:solid;
-    border-color: white;
-    border-width: 4px;
+}
+
+.intro {
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px;
+    background:rgb(255, 228, 74);
 }
 
 .section {
     width: 60%;
-    border-radius: 15px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 30px;
+    margin: 0px auto;
+    margin-top: 40px;
     display: flex;
     align-content: center;
     justify-content: center;
-    flex-wrap: wrap;
-    box-shadow:  5px 5px 30px #aaaaaa;
+    flex-wrap: nowrap;
     background-color: aliceblue;
 }
 
-.section:hover {
-    animation: moveToRight .5s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-    transition-timing-function: ease-out;
+.column1 {
+    width: 70%;
+    padding: 60px;
+    background-color: rgb(255, 228, 74);
+}
+
+.column2 {
+    width: 30%;
+    padding: 60px;
 }
 
 .footer{
-    width: 80%;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 40px;
+    background-color: rgb(255, 228, 74);
 }
 
 .white_text {
-    color: white
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    color: white;
+    text-align: center;
 }
 
 /*animation */
